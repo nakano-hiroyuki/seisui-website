@@ -5,6 +5,14 @@
   const navLinks = document.querySelectorAll("[data-route-link]");
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  const header = document.querySelector(".nav");
+  function setHeaderHeight() {
+    document.documentElement.style.setProperty("--header-h", header.offsetHeight + "px");
+  }
+  setHeaderHeight();
+  window.addEventListener("resize", setHeaderHeight);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(setHeaderHeight);
+
   function currentRoute() {
     const h = String(location.hash || "").replace(/^#\/?/, "");
     return ROUTES.includes(h) ? h : "home";

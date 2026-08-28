@@ -30,14 +30,14 @@
   <main id="main">
 
     <section data-route="home" style="padding: 0 0 clamp(var(--space-8), 10vh, 120px);">
-      <div style="position: relative; isolation: isolate; min-height: min(82vh, 760px); display: grid; align-items: end; overflow: hidden; margin-bottom: clamp(var(--space-8), 8vh, 96px);">
+      <div class="hero" style="position: relative; isolation: isolate; display: grid; align-items: end; overflow: hidden; margin-bottom: clamp(var(--space-8), 8vh, 96px);">
         <img src="images/gaikan.jpg" alt="静水 夜の外観" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
         <div style="position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(to top, rgba(16,14,12,0.92) 0%, rgba(16,14,12,0.55) 38%, rgba(16,14,12,0.18) 70%, rgba(16,14,12,0.42) 100%);"></div>
         <div style="position: relative; z-index: 2; padding: clamp(var(--space-8), 9vh, 100px) clamp(var(--space-4), 5vw, 64px) clamp(var(--space-8), 7vh, 76px); width: 100%;">
           <div data-cols="2" style="max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: clamp(var(--space-6), 5vw, 72px); align-items: end;">
             <div style="display: grid; gap: var(--space-6); max-width: 44ch;">
               <span class="num" style="font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--color-accent-400);">Kaiseki · Edogawa, Tokyo · Est. 2011</span>
-              <h1 style="margin: 0; font-weight: 400; font-size: clamp(38px, 6vw, 92px); line-height: 1.3; letter-spacing: 0.06em; color: #f6f3ee; text-shadow: 0 2px 28px rgba(0,0,0,0.55);">水の面に<br>季を<br>うつす。</h1>
+              <h1 style="margin: 0; font-weight: 400; font-size: clamp(38px, 6vw, 92px); line-height: 1.3; letter-spacing: 0.06em; color: #f6f3ee; text-shadow: 0 2px 28px rgba(0,0,0,0.55);">季節の<br>彩を<br>うつす。</h1>
               <hr class="hr" style="margin: 0; background: var(--color-accent-400); opacity: 0.75;">
               <p style="margin: 0; font-size: 15.5px; line-height: 2.1; letter-spacing: 0.03em; color: rgba(246,243,238,0.86); text-wrap: pretty; text-shadow: 0 1px 16px rgba(0,0,0,0.5);">江戸川の住宅地、旧中川の土手から歩いて六分。築六十年の一軒家に八席だけを置いた懐石の店です。</p>
               <div style="display: flex; gap: var(--space-3); flex-wrap: wrap; margin-top: var(--space-2);">
@@ -68,7 +68,7 @@
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: var(--space-4);">
           <a href="#/concept" class="card" style="gap: var(--space-2);">
             <span class="card-kicker">献立の思想</span>
-            <span class="card-title" style="font-size: 21px; color: var(--color-text);">畑と海が書く献立</span>
+            <span class="card-title" style="font-size: 21px; color: var(--color-text);">当日に書く献立</span>
             <p class="card-body">仕込みが済むのは開店の一時間前。同じ夜は二度ありません。</p>
           </a>
           <a href="#/course" class="card" style="gap: var(--space-2);">
@@ -94,7 +94,7 @@
       <div style="max-width: 1180px; margin: 0 auto; display: grid; gap: clamp(var(--space-6), 5vw, 72px);">
         <div style="display: grid; gap: var(--space-4); max-width: 60ch;">
           <h6 class="kicker">献立の思想</h6>
-          <h1 class="pgtitle">献立は、畑と海が書きます。</h1>
+          <h1 class="pgtitle">献立は、<br>当日に書きます。</h1>
           <hr class="hr" style="margin: 0; background: var(--color-accent); opacity: 0.5;">
         </div>
 
@@ -228,7 +228,7 @@
       <div style="max-width: 1180px; margin: 0 auto; display: grid; gap: clamp(var(--space-6), 5vw, 72px);">
         <div style="display: grid; gap: var(--space-4); max-width: 60ch;">
           <h6 class="kicker">酒とワイン</h6>
-          <h1 class="pgtitle">酒は、料理の次に<br>決めます。</h1>
+          <h1 class="pgtitle">酒は、料理に<br>合わせて決めます。</h1>
           <hr class="hr" style="margin: 0; background: var(--color-accent); opacity: 0.5;">
         </div>
         <div data-cols="2" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: clamp(var(--space-6), 6vw, 96px); align-items: start;">
@@ -401,7 +401,7 @@
         <div data-cols="2" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: clamp(var(--space-6), 6vw, 96px); align-items: start;">
           <div style="display: grid; gap: var(--space-4);">
             <p class="lead">二か月前の一日、午前十時より翌々月分を承ります。フォームは仮のお申し込みで、折り返しお電話にて確定いたします。当日のお取り消しは全額を頂戴します。</p>
-            <a href="tel:0355550110" class="num" style="font-family: var(--font-heading); font-size: clamp(28px, 3.4vw, 42px); letter-spacing: 0.04em; color: var(--color-text);">03 · 5555 · 0110</a>
+            <a href="tel:0355550110" class="num" style="text-decoration: none; font-family: 'Yu Mincho', 'YuMincho', 'Hiragino Mincho ProN', serif; font-size: clamp(28px, 3.4vw, 42px); letter-spacing: 0.04em; color: var(--color-text);">03-5555-0110</a>
             <hr class="hr">
             <div style="display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: var(--space-3) var(--space-6); font-size: 14px; line-height: 1.95;">
               <span class="text-muted" style="font-size: 12.5px; letter-spacing: 0.14em;">所在地</span><span>東京都江戸川区西小松川町 三-十二-八</span>

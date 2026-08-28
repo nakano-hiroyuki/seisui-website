@@ -159,6 +159,7 @@ a.card:hover { border-color: var(--color-accent); }
   position: sticky; top: 0; z-index: 40;
   display: flex; align-items: center; gap: var(--space-4);
   padding-inline: clamp(var(--space-4), 5vw, 64px);
+  padding-block: var(--space-4);
   flex-wrap: wrap;
   background: color-mix(in srgb, #ffffff 95%, transparent);
   backdrop-filter: blur(6px);
@@ -184,10 +185,13 @@ main.is-transitioning [data-route].is-active { animation: pageIn .55s cubic-bezi
 .site-footer a:hover { color: var(--color-accent-400); }
 .site-footer .hr { background: color-mix(in srgb, var(--color-neutral-500) 45%, transparent); }
 
+.hero { min-height: calc(100vh - var(--header-h, 80px)); }
+
 @media (max-width: 880px) {
   [data-cols="2"] { grid-template-columns: minmax(0, 1fr) !important; }
   .vt { writing-mode: horizontal-tb !important; border-right: 0 !important; border-top: 1px solid var(--color-divider); padding: var(--space-4) 0 0 !important; }
   [data-sm-hide] { display: none !important; }
   [data-news-row] { grid-template-columns: minmax(0, 1fr) !important; gap: var(--space-2) !important; }
   .nav-links { gap: var(--space-3); font-size: 12px; }
+  .hero { min-height: min(82vh, 760px); }
 }
