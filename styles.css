@@ -171,6 +171,21 @@ a.card:hover { border-color: var(--color-accent); }
 .navrule { height: 1px; width: 100%; background: var(--color-accent); visibility: hidden; }
 .navlink.is-active .navrule { visibility: visible; }
 
+/* — PC: ヘッダー＋ヒーローでちょうど1画面 — */
+@media (min-width: 881px) {
+  :root { --nav-h: 76px; }
+  .nav { height: var(--nav-h); flex-wrap: nowrap; }
+  .hero {
+    min-height: 0 !important;
+    height: calc(100vh - var(--nav-h));
+    height: calc(100svh - var(--nav-h));
+  }
+  /* 画面の高さが低くても中身がはみ出さないよう、余白と文字を高さ基準で縮める */
+  .hero-inner { padding-block: clamp(20px, 6vh, 100px) clamp(20px, 5vh, 76px) !important; }
+  .hero-copy { gap: clamp(10px, 2.4vh, var(--space-6)) !important; }
+  .hero-title { font-size: clamp(30px, min(6vw, 8vh), 92px) !important; }
+}
+
 /* — routes — */
 [data-route] { display: none; }
 [data-route].is-active { display: block; }

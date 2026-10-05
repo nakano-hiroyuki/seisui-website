@@ -1,495 +1,673 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>懐石 静水 | Seisui, Edogawa</title>
-<meta name="description" content="江戸川区、旧中川のほとりにある八席のみの懐石「静水」。仕込みは開店の一時間前、その日の菜と魚で献立を組みます。">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>懐石 静水 | Seisui, Edogawa</title>
+  <meta name="description" content="江戸川区、旧中川のほとりにある八席のみの懐石「静水」。仕込みは開店の一時間前、その日の菜と魚で献立を組みます。">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<div style="min-height: 100vh; display: grid; grid-template-rows: auto 1fr auto;">
+  <div style="min-height: 100vh; display: grid; grid-template-rows: auto 1fr auto;">
 
-  <header class="nav">
-    <a href="#/home" class="nav-brand">
-      <span style="letter-spacing: 0.3em; font-size: 19px;">静水</span>
-      <span class="num" style="font-size: 10px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--color-neutral-600);">Seisui&nbsp;·&nbsp;Edogawa</span>
-    </a>
-    <nav class="nav-links">
-      <a href="#/concept" class="navlink" data-route-link="concept"><span>献立</span><span class="navrule"></span></a>
-      <a href="#/course" class="navlink" data-route-link="course"><span>お品書き</span><span class="navrule"></span></a>
-      <a href="#/drink" class="navlink" data-route-link="drink"><span>酒</span><span class="navrule"></span></a>
-      <a href="#/chef" class="navlink" data-route-link="chef"><span>料理長</span><span class="navrule"></span></a>
-      <a href="#/space" class="navlink" data-route-link="space"><span>空間</span><span class="navrule"></span></a>
-      <a href="#/news" class="navlink" data-route-link="news"><span>季節の便り</span><span class="navrule"></span></a>
-      <a href="#/reserve" class="btn btn-primary" style="letter-spacing: 0.18em;">ご予約</a>
-    </nav>
-  </header>
+    <header class="nav">
+      <a href="#/home" class="nav-brand">
+        <span style="letter-spacing: 0.3em; font-size: 19px;">静水</span>
+        <span class="num"
+          style="font-size: 10px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--color-neutral-600);">Seisui&nbsp;·&nbsp;Edogawa</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#/concept" class="navlink" data-route-link="concept"><span>献立</span><span class="navrule"></span></a>
+        <a href="#/course" class="navlink" data-route-link="course"><span>お品書き</span><span class="navrule"></span></a>
+        <a href="#/drink" class="navlink" data-route-link="drink"><span>酒</span><span class="navrule"></span></a>
+        <a href="#/chef" class="navlink" data-route-link="chef"><span>料理長</span><span class="navrule"></span></a>
+        <a href="#/space" class="navlink" data-route-link="space"><span>空間</span><span class="navrule"></span></a>
+        <a href="#/news" class="navlink" data-route-link="news"><span>季節の便り</span><span class="navrule"></span></a>
+        <a href="#/reserve" class="btn btn-primary" style="letter-spacing: 0.18em;">ご予約</a>
+      </nav>
+    </header>
 
-  <main id="main">
+    <main id="main">
 
-    <section data-route="home" style="padding: 0 0 clamp(var(--space-8), 10vh, 120px);">
-      <div style="position: relative; isolation: isolate; min-height: min(82vh, 760px); display: grid; align-items: end; overflow: hidden; margin-bottom: clamp(var(--space-8), 8vh, 96px);">
-        <img src="images/gaikan.jpg" alt="静水 夜の外観" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
-        <div style="position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(to top, rgba(16,14,12,0.92) 0%, rgba(16,14,12,0.55) 38%, rgba(16,14,12,0.18) 70%, rgba(16,14,12,0.42) 100%);"></div>
-        <div style="position: relative; z-index: 2; padding: clamp(var(--space-8), 9vh, 100px) clamp(var(--space-4), 5vw, 64px) clamp(var(--space-8), 7vh, 76px); width: 100%;">
-          <div data-cols="2" style="max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: clamp(var(--space-6), 5vw, 72px); align-items: end;">
-            <div style="display: grid; gap: var(--space-6); max-width: 44ch;">
-              <span class="num" style="font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--color-accent-400);">Kaiseki · Edogawa, Tokyo · Est. 2011</span>
-              <h1 style="margin: 0; font-weight: 400; font-size: clamp(38px, 6vw, 92px); line-height: 1.3; letter-spacing: 0.06em; color: #f6f3ee; text-shadow: 0 2px 28px rgba(0,0,0,0.55);">水の面に<br>季を<br>うつす。</h1>
-              <hr class="hr" style="margin: 0; background: var(--color-accent-400); opacity: 0.75;">
-              <p style="margin: 0; font-size: 15.5px; line-height: 2.1; letter-spacing: 0.03em; color: rgba(246,243,238,0.86); text-wrap: pretty; text-shadow: 0 1px 16px rgba(0,0,0,0.5);">江戸川の住宅地、旧中川の土手から歩いて六分。築六十年の一軒家に八席だけを置いた懐石の店です。</p>
-              <div style="display: flex; gap: var(--space-3); flex-wrap: wrap; margin-top: var(--space-2);">
-                <a href="#/reserve" class="btn" style="letter-spacing: 0.2em; padding: var(--space-3) var(--space-6); border: 1px solid var(--color-accent-400); color: var(--color-accent-400); background: transparent;">席をご予約</a>
-                <a href="#/course" class="btn" style="letter-spacing: 0.2em; padding: var(--space-3) var(--space-6); border: 1px solid rgba(246,243,238,0.4); color: #f6f3ee; background: transparent;">お品書きを見る</a>
+      <section data-route="home" style="padding: 0 0 clamp(var(--space-8), 10vh, 120px);">
+        <div class="hero"
+          style="position: relative; isolation: isolate; min-height: min(82vh, 760px); display: grid; align-items: end; overflow: hidden; margin-bottom: clamp(var(--space-8), 8vh, 96px);">
+          <img src="images/gaikan.jpg" alt="静水 夜の外観"
+            style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+          <div
+            style="position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(to top, rgba(16,14,12,0.92) 0%, rgba(16,14,12,0.55) 38%, rgba(16,14,12,0.18) 70%, rgba(16,14,12,0.42) 100%);">
+          </div>
+          <div class="hero-inner"
+            style="position: relative; z-index: 2; padding: clamp(var(--space-8), 9vh, 100px) clamp(var(--space-4), 5vw, 64px) clamp(var(--space-8), 7vh, 76px); width: 100%;">
+            <div data-cols="2"
+              style="max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: clamp(var(--space-6), 5vw, 72px); align-items: end;">
+              <div class="hero-copy" style="display: grid; gap: var(--space-6); max-width: 44ch;">
+                <span class="num"
+                  style="font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--color-accent-400);">Kaiseki
+                  · Edogawa, Tokyo · Est. 2011</span>
+                <h1 class="hero-title"
+                  style="margin: 0; font-weight: 400; font-size: clamp(38px, 6vw, 92px); line-height: 1.3; letter-spacing: 0.06em; color: #f6f3ee; text-shadow: 0 2px 28px rgba(0,0,0,0.55);">
+                  季節の<br>彩をうつす。</h1>
+                <hr class="hr" style="margin: 0; background: var(--color-accent-400); opacity: 0.75;">
+                <p
+                  style="margin: 0; font-size: 15.5px; line-height: 2.1; letter-spacing: 0.03em; color: rgba(246,243,238,0.86); text-wrap: pretty; text-shadow: 0 1px 16px rgba(0,0,0,0.5);">
+                  江戸川の住宅地、旧中川の土手から歩いて六分。築六十年の一軒家に八席だけを置いた懐石の店です。</p>
+                <div style="display: flex; gap: var(--space-3); flex-wrap: wrap; margin-top: var(--space-2);">
+                  <a href="#/reserve" class="btn"
+                    style="letter-spacing: 0.2em; padding: var(--space-3) var(--space-6); border: 1px solid rgba(246,243,238,0.4); color: #f6f3ee; background: transparent;">席をご予約</a>
+                  <a href="#/course" class="btn"
+                    style="letter-spacing: 0.2em; padding: var(--space-3) var(--space-6); border: 1px solid rgba(246,243,238,0.4); color: #f6f3ee; background: transparent;">お品書きを見る</a>
+                </div>
+              </div>
+              <p class="vt"
+                style="margin: 0; font-family: var(--font-heading); font-size: clamp(15px, 1.4vw, 21px); line-height: 2.2; letter-spacing: 0.32em; color: rgba(246,243,238,0.7); border-right: 1px solid rgba(246,243,238,0.28); padding-right: var(--space-6); align-self: end; text-shadow: 0 1px 14px rgba(0,0,0,0.5);">
+                八席　主人ひとり　水曜定休</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="max-width: 1180px; margin: 0 auto; padding-inline: clamp(var(--space-4), 5vw, 64px); display: grid; gap: clamp(var(--space-6), 4vw, 64px);">
+          <div data-cols="2"
+            style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: clamp(var(--space-6), 6vw, 88px); align-items: center;">
+            <div style="display: grid; gap: var(--space-4);">
+              <h6 class="kicker">ごあいさつ</h6>
+              <p class="lead">献立表はお出しせず、その朝に届いた菜と魚で一夜の順序を組みます。決めているのは順序と火加減だけ。仕込みが済むのは開店の一時間前で、だから同じ夜は二度ありません。</p>
+              <a href="#/concept" style="font-size: 13.5px; letter-spacing: 0.14em;">献立の思想を読む　—&gt;</a>
+            </div>
+            <figure style="display: grid; gap: var(--space-2); margin: 0;">
+              <div class="plate" style="border-radius: var(--radius-md);">
+                <img src="images/hassun.jpg" alt="八寸の一皿"
+                  style="width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block;">
+              </div>
+              <figcaption style="text-align: right; letter-spacing: 0.1em;">八月の八寸。器は九代 中村宗哲。</figcaption>
+            </figure>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: var(--space-4);">
+            <a href="#/concept" class="card" style="gap: var(--space-2);">
+              <span class="card-kicker">献立の思想</span>
+              <span class="card-title" style="font-size: 21px; color: var(--color-text);">畑と海が書く献立</span>
+              <p class="card-body">仕込みが済むのは開店の一時間前。同じ夜は二度ありません。</p>
+            </a>
+            <a href="#/course" class="card" style="gap: var(--space-2);">
+              <span class="card-kicker">お品書き</span>
+              <span class="card-title" style="font-size: 21px; color: var(--color-text);">おまかせ　八月の一例</span>
+              <p class="card-body">全十二品、¥28,000。酒とワインの組み合せもご用意します。</p>
+            </a>
+            <a href="#/space" class="card" style="gap: var(--space-2);">
+              <span class="card-kicker">店内・空間</span>
+              <span class="card-title" style="font-size: 21px; color: var(--color-text);">一軒家に、八席</span>
+              <p class="card-body">吉野杉の一枚板。灯りは手元だけに落としています。</p>
+            </a>
+          </div>
+
+          <div class="next">
+            <span class="text-muted">次のページ</span>
+            <a href="#/concept">献立の思想　—&gt;</a>
+          </div>
+        </div>
+      </section>
+
+      <section data-route="concept"
+        style="padding: clamp(var(--space-8), 8vh, 96px) clamp(var(--space-4), 5vw, 64px) clamp(var(--space-8), 10vh, 120px);">
+        <div style="max-width: 1180px; margin: 0 auto; display: grid; gap: clamp(var(--space-6), 5vw, 72px);">
+          <div style="display: grid; gap: var(--space-4); max-width: 60ch;">
+            <h6 class="kicker">献立の思想</h6>
+            <h1 class="pgtitle">献立は、畑と海が書きます。</h1>
+            <hr class="hr" style="margin: 0; background: var(--color-accent); opacity: 0.5;">
+          </div>
+
+          <div data-cols="2"
+            style="display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: clamp(var(--space-6), 6vw, 88px); align-items: start;">
+            <div style="display: grid; gap: var(--space-6);">
+              <p class="lead">決めているのは順序と火加減だけで、素材はその日に決まります。朝は築地の仲買を三軒まわり、昼に千葉と三浦から青物が届く。仕込みが済むのは開店の一時間前。だから同じ夜は二度ありません。
+              </p>
+              <p class="lead">八席のカウンターは、板場との距離を三尺に保っています。焼きの音、椀を満たす湯気、器を置く間。料理は皿の上だけで完結しないと考えています。お客様は一斉にお席へ、同じ皿を同じ温度で。
+              </p>
+              <hr class="hr" style="margin: 0;">
+              <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: var(--space-4);">
+                <div style="display: grid; gap: var(--space-2);">
+                  <span class="num"
+                    style="font-family: var(--font-heading); font-size: 40px; line-height: 1; color: var(--color-accent);">08</span>
+                  <span class="text-muted" style="font-size: 12.5px; letter-spacing: 0.12em;">席数（カウンターのみ）</span>
+                </div>
+                <div style="display: grid; gap: var(--space-2);">
+                  <span class="num"
+                    style="font-family: var(--font-heading); font-size: 40px; line-height: 1; color: var(--color-accent);">12</span>
+                  <span class="text-muted" style="font-size: 12.5px; letter-spacing: 0.12em;">品数（おまかせ一本）</span>
+                </div>
+                <div style="display: grid; gap: var(--space-2);">
+                  <span class="num"
+                    style="font-family: var(--font-heading); font-size: 40px; line-height: 1; color: var(--color-accent);">02</span>
+                  <span class="text-muted" style="font-size: 12.5px; letter-spacing: 0.12em;">一夜の回（17:30／20:30）</span>
+                </div>
+                <div style="display: grid; gap: var(--space-2);">
+                  <span class="num"
+                    style="font-family: var(--font-heading); font-size: 40px; line-height: 1; color: var(--color-accent);">2011</span>
+                  <span class="text-muted" style="font-size: 12.5px; letter-spacing: 0.12em;">開店（神楽坂より移転）</span>
+                </div>
               </div>
             </div>
-            <p class="vt" style="margin: 0; font-family: var(--font-heading); font-size: clamp(15px, 1.4vw, 21px); line-height: 2.2; letter-spacing: 0.32em; color: rgba(246,243,238,0.7); border-right: 1px solid rgba(246,243,238,0.28); padding-right: var(--space-6); align-self: end; text-shadow: 0 1px 14px rgba(0,0,0,0.5);">八席　主人ひとり　水曜定休</p>
-          </div>
-        </div>
-      </div>
-
-      <div style="max-width: 1180px; margin: 0 auto; padding-inline: clamp(var(--space-4), 5vw, 64px); display: grid; gap: clamp(var(--space-6), 4vw, 64px);">
-        <div data-cols="2" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: clamp(var(--space-6), 6vw, 88px); align-items: center;">
-          <div style="display: grid; gap: var(--space-4);">
-            <h6 class="kicker">ごあいさつ</h6>
-            <p class="lead">献立表はお出しせず、その朝に届いた菜と魚で一夜の順序を組みます。決めているのは順序と火加減だけ。仕込みが済むのは開店の一時間前で、だから同じ夜は二度ありません。</p>
-            <a href="#/concept" style="font-size: 13.5px; letter-spacing: 0.14em;">献立の思想を読む　—&gt;</a>
-          </div>
-          <figure style="display: grid; gap: var(--space-2); margin: 0;">
-            <div class="plate" style="border-radius: var(--radius-md);">
-              <img src="images/hassun.jpg" alt="八寸の一皿" style="width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block;">
+            <div style="display: grid; gap: clamp(var(--space-4), 3vw, var(--space-6));">
+              <figure style="display: grid; gap: var(--space-2); margin: 0;">
+                <div class="plate" style="border-radius: var(--radius-md);">
+                  <img src="images/charcoal.jpg" alt="炭火の焼き場"
+                    style="width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block;">
+                </div>
+                <figcaption style="letter-spacing: 0.1em;">紀州備長炭。塩は伊豆大島の平釜。</figcaption>
+              </figure>
+              <figure style="display: grid; gap: var(--space-2); margin: 0;">
+                <div class="plate" style="border-radius: var(--radius-md);">
+                  <img src="images/wan.jpg" alt="椀に出汁を注ぐ"
+                    style="width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block;">
+                </div>
+                <figcaption style="letter-spacing: 0.1em;">一番出汁は、待って引く。</figcaption>
+              </figure>
             </div>
-            <figcaption style="text-align: right; letter-spacing: 0.1em;">八月の八寸。器は九代 中村宗哲。</figcaption>
-          </figure>
-        </div>
+          </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: var(--space-4);">
-          <a href="#/concept" class="card" style="gap: var(--space-2);">
-            <span class="card-kicker">献立の思想</span>
-            <span class="card-title" style="font-size: 21px; color: var(--color-text);">畑と海が書く献立</span>
-            <p class="card-body">仕込みが済むのは開店の一時間前。同じ夜は二度ありません。</p>
-          </a>
-          <a href="#/course" class="card" style="gap: var(--space-2);">
-            <span class="card-kicker">お品書き</span>
-            <span class="card-title" style="font-size: 21px; color: var(--color-text);">おまかせ　八月の一例</span>
-            <p class="card-body">全十二品、¥28,000。酒とワインの組み合せもご用意します。</p>
-          </a>
-          <a href="#/space" class="card" style="gap: var(--space-2);">
-            <span class="card-kicker">店内・空間</span>
-            <span class="card-title" style="font-size: 21px; color: var(--color-text);">一軒家に、八席</span>
-            <p class="card-body">吉野杉の一枚板。灯りは手元だけに落としています。</p>
-          </a>
+          <div class="next">
+            <a href="#/home" class="text-muted">&lt;—　ホーム</a>
+            <a href="#/course">お品書き　—&gt;</a>
+          </div>
         </div>
+      </section>
 
-        <div class="next">
-          <span class="text-muted">次のページ</span>
-          <a href="#/concept">献立の思想　—&gt;</a>
+      <section data-route="course"
+        style="padding: clamp(var(--space-8), 8vh, 96px) clamp(var(--space-4), 5vw, 64px) clamp(var(--space-8), 10vh, 120px);">
+        <div style="max-width: 1000px; margin: 0 auto; display: grid; gap: clamp(var(--space-6), 5vw, 64px);">
+          <div style="display: grid; gap: var(--space-4);">
+            <h6 class="kicker">お品書き</h6>
+            <h1 class="pgtitle">おまかせ　八月の一例</h1>
+            <hr class="hr" style="margin: 0; background: var(--color-accent); opacity: 0.5;">
+            <p class="text-muted"
+              style="margin: 0; max-width: 44ch; font-size: 13.5px; line-height: 2; letter-spacing: 0.06em;">
+              仕入れにより毎日入れ替わります。お苦手な食材は、ご予約の際にお知らせください。</p>
+          </div>
+
+          <table class="table">
+            <tbody>
+              <tr>
+                <td class="num"
+                  style="width: 72px; vertical-align: top; padding-block: var(--space-4); color: var(--color-neutral-600); letter-spacing: 0.2em;">
+                  一</td>
+                <td style="padding-block: var(--space-4);">
+                  <div style="display: grid; gap: var(--space-1);"><span
+                      style="font-size: 17px; letter-spacing: 0.14em;">先付　賀茂茄子の翡翠煮</span><span class="text-muted"
+                      style="font-size: 13px;">吉野葛、蓼の香り</span></div>
+                </td>
+                <td data-sm-hide
+                  style="width: 130px; text-align: right; vertical-align: top; padding-block: var(--space-4); font-family: var(--font-heading); font-style: italic; font-size: 13px; color: var(--color-neutral-600);">
+                  Sakizuke</td>
+              </tr>
+              <tr>
+                <td class="num"
+                  style="vertical-align: top; padding-block: var(--space-4); color: var(--color-neutral-600); letter-spacing: 0.2em;">
+                  二</td>
+                <td style="padding-block: var(--space-4);">
+                  <div style="display: grid; gap: var(--space-1);"><span
+                      style="font-size: 17px; letter-spacing: 0.14em;">椀物　鱧と冬瓜の葛仕立て</span><span class="text-muted"
+                      style="font-size: 13px;">一番出汁、青柚子</span></div>
+                </td>
+                <td data-sm-hide
+                  style="text-align: right; vertical-align: top; padding-block: var(--space-4); font-family: var(--font-heading); font-style: italic; font-size: 13px; color: var(--color-neutral-600);">
+                  Wanmono</td>
+              </tr>
+              <tr>
+                <td class="num"
+                  style="vertical-align: top; padding-block: var(--space-4); color: var(--color-neutral-600); letter-spacing: 0.2em;">
+                  三</td>
+                <td style="padding-block: var(--space-4);">
+                  <div style="display: grid; gap: var(--space-1);"><span
+                      style="font-size: 17px; letter-spacing: 0.14em;">向付　明石の鮪、鳥貝</span><span class="text-muted"
+                      style="font-size: 13px;">土佐醤油、山葵は朝おろし</span></div>
+                </td>
+                <td data-sm-hide
+                  style="text-align: right; vertical-align: top; padding-block: var(--space-4); font-family: var(--font-heading); font-style: italic; font-size: 13px; color: var(--color-neutral-600);">
+                  Mukouzuke</td>
+              </tr>
+              <tr>
+                <td class="num"
+                  style="vertical-align: top; padding-block: var(--space-4); color: var(--color-neutral-600); letter-spacing: 0.2em;">
+                  四</td>
+                <td style="padding-block: var(--space-4);">
+                  <div style="display: grid; gap: var(--space-1);"><span
+                      style="font-size: 17px; letter-spacing: 0.14em;">焼物　鮎の一夜干し　炭火</span><span class="text-muted"
+                      style="font-size: 13px;">蓼酢、天然塩のみ</span></div>
+                </td>
+                <td data-sm-hide
+                  style="text-align: right; vertical-align: top; padding-block: var(--space-4); font-family: var(--font-heading); font-style: italic; font-size: 13px; color: var(--color-neutral-600);">
+                  Yakimono</td>
+              </tr>
+              <tr>
+                <td class="num"
+                  style="vertical-align: top; padding-block: var(--space-4); color: var(--color-neutral-600); letter-spacing: 0.2em;">
+                  五</td>
+                <td style="padding-block: var(--space-4);">
+                  <div style="display: grid; gap: var(--space-1);"><span
+                      style="font-size: 17px; letter-spacing: 0.14em;">炊合　海老芋と鴨ロース</span><span class="text-muted"
+                      style="font-size: 13px;">白味噌、粉山椒</span></div>
+                </td>
+                <td data-sm-hide
+                  style="text-align: right; vertical-align: top; padding-block: var(--space-4); font-family: var(--font-heading); font-style: italic; font-size: 13px; color: var(--color-neutral-600);">
+                  Takiawase</td>
+              </tr>
+              <tr>
+                <td class="num"
+                  style="vertical-align: top; padding-block: var(--space-4); color: var(--color-neutral-600); letter-spacing: 0.2em;">
+                  六</td>
+                <td style="padding-block: var(--space-4);">
+                  <div style="display: grid; gap: var(--space-1);"><span
+                      style="font-size: 17px; letter-spacing: 0.14em;">強肴　鮑の柔らか蒸し</span><span class="text-muted"
+                      style="font-size: 13px;">肝のソース、酢橘</span></div>
+                </td>
+                <td data-sm-hide
+                  style="text-align: right; vertical-align: top; padding-block: var(--space-4); font-family: var(--font-heading); font-style: italic; font-size: 13px; color: var(--color-neutral-600);">
+                  Shiizakana</td>
+              </tr>
+              <tr>
+                <td class="num"
+                  style="vertical-align: top; padding-block: var(--space-4); color: var(--color-neutral-600); letter-spacing: 0.2em;">
+                  七</td>
+                <td style="padding-block: var(--space-4);">
+                  <div style="display: grid; gap: var(--space-1);"><span
+                      style="font-size: 17px; letter-spacing: 0.14em;">御飯　丹波の新米、香の物</span><span class="text-muted"
+                      style="font-size: 13px;">土鍋炊き、椀替りの赤出汁</span></div>
+                </td>
+                <td data-sm-hide
+                  style="text-align: right; vertical-align: top; padding-block: var(--space-4); font-family: var(--font-heading); font-style: italic; font-size: 13px; color: var(--color-neutral-600);">
+                  Gohan</td>
+              </tr>
+              <tr>
+                <td class="num"
+                  style="vertical-align: top; padding-block: var(--space-4); color: var(--color-neutral-600); letter-spacing: 0.2em; border-bottom: 0;">
+                  八</td>
+                <td style="padding-block: var(--space-4); border-bottom: 0;">
+                  <div style="display: grid; gap: var(--space-1);"><span
+                      style="font-size: 17px; letter-spacing: 0.14em;">水菓子　白桃と甘露</span><span class="text-muted"
+                      style="font-size: 13px;">薄茶とともに</span></div>
+                </td>
+                <td data-sm-hide
+                  style="text-align: right; vertical-align: top; padding-block: var(--space-4); border-bottom: 0; font-family: var(--font-heading); font-style: italic; font-size: 13px; color: var(--color-neutral-600);">
+                  Mizugashi</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: var(--space-4);">
+            <div class="card">
+              <span class="card-kicker">おまかせ　夜</span>
+              <span class="num" style="font-family: var(--font-heading); font-size: 28px; letter-spacing: 0.02em;">¥
+                28,000</span>
+              <p class="card-body">全十二品。税・サービス料（10%）別。</p>
+            </div>
+            <div class="card">
+              <span class="card-kicker">酒肴の組み合せ</span>
+              <span class="num" style="font-family: var(--font-heading); font-size: 28px; letter-spacing: 0.02em;">¥
+                9,000</span>
+              <p class="card-body">日本酒五種。料理に合わせて主人がお出しします。</p>
+            </div>
+            <div class="card">
+              <span class="card-kicker">ワインの組み合せ</span>
+              <span class="num" style="font-family: var(--font-heading); font-size: 28px; letter-spacing: 0.02em;">¥
+                12,000</span>
+              <p class="card-body">四種。ブルゴーニュとジュラを中心に。</p>
+            </div>
+          </div>
+
+          <div class="next">
+            <a href="#/concept" class="text-muted">&lt;—　献立の思想</a>
+            <a href="#/drink">酒とワイン　—&gt;</a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section data-route="concept" style="padding: clamp(var(--space-8), 8vh, 96px) clamp(var(--space-4), 5vw, 64px) clamp(var(--space-8), 10vh, 120px);">
-      <div style="max-width: 1180px; margin: 0 auto; display: grid; gap: clamp(var(--space-6), 5vw, 72px);">
-        <div style="display: grid; gap: var(--space-4); max-width: 60ch;">
-          <h6 class="kicker">献立の思想</h6>
-          <h1 class="pgtitle">献立は、畑と海が書きます。</h1>
-          <hr class="hr" style="margin: 0; background: var(--color-accent); opacity: 0.5;">
+      <section data-route="drink"
+        style="padding: clamp(var(--space-8), 8vh, 96px) clamp(var(--space-4), 5vw, 64px) clamp(var(--space-8), 10vh, 120px);">
+        <div style="max-width: 1180px; margin: 0 auto; display: grid; gap: clamp(var(--space-6), 5vw, 72px);">
+          <div style="display: grid; gap: var(--space-4); max-width: 60ch;">
+            <h6 class="kicker">酒とワイン</h6>
+            <h1 class="pgtitle">酒は、料理の次に<br>決めます。</h1>
+            <hr class="hr" style="margin: 0; background: var(--color-accent); opacity: 0.5;">
+          </div>
+          <div data-cols="2"
+            style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: clamp(var(--space-6), 6vw, 96px); align-items: start;">
+            <div style="display: grid; gap: var(--space-4);">
+              <p class="lead">常備は十五種ほど。冷蔵庫の容量にあわせ、開けたものはその晩で使い切ります。銘柄のご指定より、皿に合わせてお任せいただくほうが良い夜になります。</p>
+              <figure style="display: grid; gap: var(--space-2); margin: var(--space-2) 0 0;">
+                <div class="plate" style="border-radius: var(--radius-md);">
+                  <img src="images/sake.jpg" alt="酒器と徳利"
+                    style="width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block;">
+                </div>
+                <figcaption style="letter-spacing: 0.1em;">酒器は李朝と唐津を織り交ぜて。</figcaption>
+              </figure>
+            </div>
+            <div style="display: grid; gap: var(--space-8);">
+              <div style="display: grid; gap: var(--space-3);">
+                <div
+                  style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid var(--color-accent); padding-bottom: var(--space-2);">
+                  <span style="font-size: 15px; letter-spacing: 0.2em;">日本酒</span>
+                  <span class="num text-muted" style="font-size: 11px; letter-spacing: 0.18em;">GLASS 90ml</span>
+                </div>
+                <div
+                  style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-2) var(--space-6); font-size: 14px; line-height: 2;">
+                  <span>惣兵衛　純米大吟醸　生原酒<span class="text-muted" style="font-size: 12px;">　新潟・佐渡</span></span><span
+                    class="num">¥ 2,400</span>
+                  <span>白鷺の城　山廃純米<span class="text-muted" style="font-size: 12px;">　兵庫・姫路</span></span><span
+                    class="num">¥ 1,600</span>
+                  <span>睡蓮　特別純米　無濾過<span class="text-muted" style="font-size: 12px;">　秋田・湯沢</span></span><span
+                    class="num">¥ 1,400</span>
+                  <span>寒北　貴醸酒<span class="text-muted" style="font-size: 12px;">　佐賀・鹿島</span></span><span class="num">¥
+                    1,900</span>
+                </div>
+              </div>
+              <div style="display: grid; gap: var(--space-3);">
+                <div
+                  style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid var(--color-accent); padding-bottom: var(--space-2);">
+                  <span style="font-size: 15px; letter-spacing: 0.2em;">ワイン</span>
+                  <span class="num text-muted" style="font-size: 11px; letter-spacing: 0.18em;">GLASS 100ml</span>
+                </div>
+                <div
+                  style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-2) var(--space-6); font-size: 14px; line-height: 2;">
+                  <span>Chablis 1er Cru, Montmains 2021<span class="text-muted"
+                      style="font-size: 12px;">　Bourgogne</span></span><span class="num">¥ 2,800</span>
+                  <span>Savagnin Ouillé 2020<span class="text-muted" style="font-size: 12px;">　Jura</span></span><span
+                    class="num">¥ 2,600</span>
+                  <span>Bourgogne Rouge, Vieilles Vignes 2019<span class="text-muted"
+                      style="font-size: 12px;">　Bourgogne</span></span><span class="num">¥ 3,100</span>
+                  <span>Champagne Extra Brut, Blanc de Noirs NV<span class="text-muted"
+                      style="font-size: 12px;">　Montagne de Reims</span></span><span class="num">¥ 3,400</span>
+                </div>
+              </div>
+              <div style="display: grid; gap: var(--space-3);">
+                <div
+                  style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid var(--color-divider); padding-bottom: var(--space-2);">
+                  <span style="font-size: 15px; letter-spacing: 0.2em;">お茶・その他</span>
+                </div>
+                <div
+                  style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-2) var(--space-6); font-size: 14px; line-height: 2;">
+                  <span>宇治　薄茶（水菓子とともに）</span><span class="num text-muted">コースに含む</span>
+                  <span>朝比奈　玉露　冷やし</span><span class="num">¥ 1,200</span>
+                  <span>ノンアルコールの組み合せ（四種）</span><span class="num">¥ 5,000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="next">
+            <a href="#/course" class="text-muted">&lt;—　お品書き</a>
+            <a href="#/chef">料理長　—&gt;</a>
+          </div>
         </div>
+      </section>
 
-        <div data-cols="2" style="display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: clamp(var(--space-6), 6vw, 88px); align-items: start;">
+      <section data-route="chef"
+        style="padding: clamp(var(--space-8), 8vh, 96px) clamp(var(--space-4), 5vw, 64px) clamp(var(--space-8), 10vh, 120px);">
+        <div style="max-width: 1180px; margin: 0 auto; display: grid; gap: clamp(var(--space-6), 5vw, 72px);">
+          <div style="display: grid; gap: var(--space-4); max-width: 60ch;">
+            <h6 class="kicker">料理長</h6>
+            <h1 class="pgtitle">高瀬 惣一郎</h1>
+            <hr class="hr" style="margin: 0; background: var(--color-accent); opacity: 0.5;">
+          </div>
+          <div data-cols="2"
+            style="display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); gap: clamp(var(--space-6), 6vw, 88px); align-items: start;">
+            <figure style="display: grid; gap: var(--space-2); margin: 0;">
+              <div class="plate" style="border-radius: var(--radius-md);">
+                <img src="images/chef.jpg" alt="板場に立つ料理長"
+                  style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block;">
+              </div>
+              <figcaption style="letter-spacing: 0.1em;">料理長　高瀬 惣一郎</figcaption>
+            </figure>
+            <div style="display: grid; gap: var(--space-4);">
+              <p class="lead">十六で祇園の料亭に入り、十二年を煮方で過ごす。三十歳で渡欧し、リヨンとコペンハーゲンの厨房を経て帰国。二〇一一年、神楽坂の五席で静水を始め、二〇一九年に江戸川のこの家へ移る。
+              </p>
+              <blockquote
+                style="margin: 0; padding-left: var(--space-6); border-left: 1px solid var(--color-accent); font-size: 16px; line-height: 2.1; letter-spacing: 0.04em; font-family: var(--font-heading);">
+                出汁は引くものではなく、待つもの。火を弱めて三十分、鰹が自分から出てくるのを待ちます。急いだ出汁は、椀を空ける前に飽きが来ます。</blockquote>
+              <hr class="hr">
+              <div
+                style="display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: var(--space-3) var(--space-6); font-size: 13.5px; line-height: 1.9;">
+                <span class="num text-muted">一九七二</span><span>東京・江東区に生まれる</span>
+                <span class="num text-muted">一九八八</span><span>京都・祇園「梅乃井」に入る</span>
+                <span class="num text-muted">二〇〇二</span><span>仏リヨン「Le Puits」煮方</span>
+                <span class="num text-muted">二〇一一</span><span>神楽坂に静水 開店</span>
+                <span class="num text-muted">二〇一九</span><span>江戸川区西小松川へ移転、現在の八席に</span>
+              </div>
+            </div>
+          </div>
+          <div class="next">
+            <a href="#/drink" class="text-muted">&lt;—　酒とワイン</a>
+            <a href="#/space">店内・空間　—&gt;</a>
+          </div>
+        </div>
+      </section>
+
+      <section data-route="space"
+        style="padding: clamp(var(--space-8), 8vh, 96px) clamp(var(--space-4), 5vw, 64px) clamp(var(--space-8), 10vh, 120px);">
+        <div style="max-width: 1180px; margin: 0 auto; display: grid; gap: clamp(var(--space-6), 5vw, 64px);">
+          <div style="display: grid; gap: var(--space-4); max-width: 60ch;">
+            <h6 class="kicker">店内・空間</h6>
+            <h1 class="pgtitle">一軒家に、八席</h1>
+            <hr class="hr" style="margin: 0; background: var(--color-accent); opacity: 0.5;">
+            <p class="lead">築六十年の木造二階建てを、柱と梁を残して改めました。カウンターは吉野杉の一枚板。灯りは手元だけに落とし、庭の音が入るよう窓を一枚残しています。</p>
+          </div>
+          <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: clamp(var(--space-4), 3vw, var(--space-8));">
+            <figure style="display: grid; gap: var(--space-2); margin: 0;">
+              <div class="plate" style="border-radius: var(--radius-md);">
+                <img src="images/counter.jpg" alt="吉野杉の一枚板カウンター"
+                  style="width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block;">
+              </div>
+              <figcaption style="letter-spacing: 0.1em;">八席のカウンター（一枚板・四寸）</figcaption>
+            </figure>
+            <figure style="display: grid; gap: var(--space-2); margin: 0; align-self: end;">
+              <div class="plate" style="border-radius: var(--radius-md);">
+                <img src="images/roji.jpg" alt="露地と坪庭の灯り"
+                  style="width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block;">
+              </div>
+              <figcaption style="letter-spacing: 0.1em;">門から玄関までの露地</figcaption>
+            </figure>
+            <figure style="display: grid; gap: var(--space-2); margin: 0;">
+              <div class="plate" style="border-radius: var(--radius-md);">
+                <img src="images/zashiki.jpg" alt="二階の四畳半座敷"
+                  style="width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block;">
+              </div>
+              <figcaption style="letter-spacing: 0.1em;">二階座敷（四名まで・要相談）</figcaption>
+            </figure>
+          </div>
+          <div class="next">
+            <a href="#/chef" class="text-muted">&lt;—　料理長</a>
+            <a href="#/news">季節の便り　—&gt;</a>
+          </div>
+        </div>
+      </section>
+
+      <section data-route="news"
+        style="padding: clamp(var(--space-8), 8vh, 96px) clamp(var(--space-4), 5vw, 64px) clamp(var(--space-8), 10vh, 120px);">
+        <div style="max-width: 1000px; margin: 0 auto; display: grid; gap: clamp(var(--space-6), 5vw, 64px);">
+          <div style="display: grid; gap: var(--space-4); max-width: 60ch;">
+            <h6 class="kicker">季節の便り</h6>
+            <h1 class="pgtitle">お知らせ</h1>
+            <hr class="hr" style="margin: 0; background: var(--color-accent); opacity: 0.5;">
+          </div>
           <div style="display: grid; gap: var(--space-6);">
-            <p class="lead">決めているのは順序と火加減だけで、素材はその日に決まります。朝は築地の仲買を三軒まわり、昼に千葉と三浦から青物が届く。仕込みが済むのは開店の一時間前。だから同じ夜は二度ありません。</p>
-            <p class="lead">八席のカウンターは、板場との距離を三尺に保っています。焼きの音、椀を満たす湯気、器を置く間。料理は皿の上だけで完結しないと考えています。お客様は一斉にお席へ、同じ皿を同じ温度で。</p>
-            <hr class="hr" style="margin: 0;">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: var(--space-4);">
+            <article data-news-row
+              style="display: grid; grid-template-columns: 118px minmax(0, 1fr); gap: var(--space-6); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-divider);">
+              <span class="num text-muted" style="font-size: 12px; letter-spacing: 0.16em;">2026.08.01</span>
               <div style="display: grid; gap: var(--space-2);">
-                <span class="num" style="font-family: var(--font-heading); font-size: 40px; line-height: 1; color: var(--color-accent);">08</span>
-                <span class="text-muted" style="font-size: 12.5px; letter-spacing: 0.12em;">席数（カウンターのみ）</span>
+                <h4 style="margin: 0; font-weight: 400; font-size: 19px; letter-spacing: 0.08em;">十月分のご予約を承ります</h4>
+                <p class="text-muted" style="margin: 0; font-size: 14px; line-height: 2;">
+                  八月一日午前十時より、電話にて受付を開始します。二部（20:30）は比較的お取りやすくなっております。</p>
               </div>
+            </article>
+            <article data-news-row
+              style="display: grid; grid-template-columns: 118px minmax(0, 1fr); gap: var(--space-6); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-divider);">
+              <span class="num text-muted" style="font-size: 12px; letter-spacing: 0.16em;">2026.07.18</span>
               <div style="display: grid; gap: var(--space-2);">
-                <span class="num" style="font-family: var(--font-heading); font-size: 40px; line-height: 1; color: var(--color-accent);">12</span>
-                <span class="text-muted" style="font-size: 12.5px; letter-spacing: 0.12em;">品数（おまかせ一本）</span>
+                <h4 style="margin: 0; font-weight: 400; font-size: 19px; letter-spacing: 0.08em;">鮎が終わり、松茸を待つ間</h4>
+                <p class="text-muted" style="margin: 0; font-size: 14px; line-height: 2;">
+                  今年の鮎は九月中旬まで。焼物は落ち鮎の子持ちに替わり、以降は甘鯛の松笠焼きへ移ります。</p>
               </div>
+            </article>
+            <article data-news-row
+              style="display: grid; grid-template-columns: 118px minmax(0, 1fr); gap: var(--space-6);">
+              <span class="num text-muted" style="font-size: 12px; letter-spacing: 0.16em;">2026.06.30</span>
               <div style="display: grid; gap: var(--space-2);">
-                <span class="num" style="font-family: var(--font-heading); font-size: 40px; line-height: 1; color: var(--color-accent);">02</span>
-                <span class="text-muted" style="font-size: 12.5px; letter-spacing: 0.12em;">一夜の回（17:30／20:30）</span>
+                <h4 style="margin: 0; font-weight: 400; font-size: 19px; letter-spacing: 0.08em;">夏季休業のお知らせ</h4>
+                <p class="text-muted" style="margin: 0; font-size: 14px; line-height: 2;">
+                  八月十三日から十八日まで、庭木の手入れと器の入れ替えのため休ませていただきます。</p>
               </div>
-              <div style="display: grid; gap: var(--space-2);">
-                <span class="num" style="font-family: var(--font-heading); font-size: 40px; line-height: 1; color: var(--color-accent);">2011</span>
-                <span class="text-muted" style="font-size: 12.5px; letter-spacing: 0.12em;">開店（神楽坂より移転）</span>
-              </div>
-            </div>
+            </article>
           </div>
-          <div style="display: grid; gap: clamp(var(--space-4), 3vw, var(--space-6));">
-            <figure style="display: grid; gap: var(--space-2); margin: 0;">
-              <div class="plate" style="border-radius: var(--radius-md);">
-                <img src="images/charcoal.jpg" alt="炭火の焼き場" style="width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block;">
-              </div>
-              <figcaption style="letter-spacing: 0.1em;">紀州備長炭。塩は伊豆大島の平釜。</figcaption>
-            </figure>
-            <figure style="display: grid; gap: var(--space-2); margin: 0;">
-              <div class="plate" style="border-radius: var(--radius-md);">
-                <img src="images/wan.jpg" alt="椀に出汁を注ぐ" style="width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block;">
-              </div>
-              <figcaption style="letter-spacing: 0.1em;">一番出汁は、待って引く。</figcaption>
-            </figure>
+          <div class="next">
+            <a href="#/space" class="text-muted">&lt;—　店内・空間</a>
+            <a href="#/reserve">ご予約　—&gt;</a>
           </div>
         </div>
+      </section>
 
-        <div class="next">
-          <a href="#/home" class="text-muted">&lt;—　ホーム</a>
-          <a href="#/course">お品書き　—&gt;</a>
-        </div>
-      </div>
-    </section>
-
-    <section data-route="course" style="padding: clamp(var(--space-8), 8vh, 96px) clamp(var(--space-4), 5vw, 64px) clamp(var(--space-8), 10vh, 120px);">
-      <div style="max-width: 1000px; margin: 0 auto; display: grid; gap: clamp(var(--space-6), 5vw, 64px);">
-        <div style="display: grid; gap: var(--space-4);">
-          <h6 class="kicker">お品書き</h6>
-          <h1 class="pgtitle">おまかせ　八月の一例</h1>
-          <hr class="hr" style="margin: 0; background: var(--color-accent); opacity: 0.5;">
-          <p class="text-muted" style="margin: 0; max-width: 44ch; font-size: 13.5px; line-height: 2; letter-spacing: 0.06em;">仕入れにより毎日入れ替わります。お苦手な食材は、ご予約の際にお知らせください。</p>
-        </div>
-
-        <table class="table">
-          <tbody>
-            <tr>
-              <td class="num" style="width: 72px; vertical-align: top; padding-block: var(--space-4); color: var(--color-neutral-600); letter-spacing: 0.2em;">一</td>
-              <td style="padding-block: var(--space-4);"><div style="display: grid; gap: var(--space-1);"><span style="font-size: 17px; letter-spacing: 0.14em;">先付　賀茂茄子の翡翠煮</span><span class="text-muted" style="font-size: 13px;">吉野葛、蓼の香り</span></div></td>
-              <td data-sm-hide style="width: 130px; text-align: right; vertical-align: top; padding-block: var(--space-4); font-family: var(--font-heading); font-style: italic; font-size: 13px; color: var(--color-neutral-600);">Sakizuke</td>
-            </tr>
-            <tr>
-              <td class="num" style="vertical-align: top; padding-block: var(--space-4); color: var(--color-neutral-600); letter-spacing: 0.2em;">二</td>
-              <td style="padding-block: var(--space-4);"><div style="display: grid; gap: var(--space-1);"><span style="font-size: 17px; letter-spacing: 0.14em;">椀物　鱧と冬瓜の葛仕立て</span><span class="text-muted" style="font-size: 13px;">一番出汁、青柚子</span></div></td>
-              <td data-sm-hide style="text-align: right; vertical-align: top; padding-block: var(--space-4); font-family: var(--font-heading); font-style: italic; font-size: 13px; color: var(--color-neutral-600);">Wanmono</td>
-            </tr>
-            <tr>
-              <td class="num" style="vertical-align: top; padding-block: var(--space-4); color: var(--color-neutral-600); letter-spacing: 0.2em;">三</td>
-              <td style="padding-block: var(--space-4);"><div style="display: grid; gap: var(--space-1);"><span style="font-size: 17px; letter-spacing: 0.14em;">向付　明石の鮪、鳥貝</span><span class="text-muted" style="font-size: 13px;">土佐醤油、山葵は朝おろし</span></div></td>
-              <td data-sm-hide style="text-align: right; vertical-align: top; padding-block: var(--space-4); font-family: var(--font-heading); font-style: italic; font-size: 13px; color: var(--color-neutral-600);">Mukouzuke</td>
-            </tr>
-            <tr>
-              <td class="num" style="vertical-align: top; padding-block: var(--space-4); color: var(--color-neutral-600); letter-spacing: 0.2em;">四</td>
-              <td style="padding-block: var(--space-4);"><div style="display: grid; gap: var(--space-1);"><span style="font-size: 17px; letter-spacing: 0.14em;">焼物　鮎の一夜干し　炭火</span><span class="text-muted" style="font-size: 13px;">蓼酢、天然塩のみ</span></div></td>
-              <td data-sm-hide style="text-align: right; vertical-align: top; padding-block: var(--space-4); font-family: var(--font-heading); font-style: italic; font-size: 13px; color: var(--color-neutral-600);">Yakimono</td>
-            </tr>
-            <tr>
-              <td class="num" style="vertical-align: top; padding-block: var(--space-4); color: var(--color-neutral-600); letter-spacing: 0.2em;">五</td>
-              <td style="padding-block: var(--space-4);"><div style="display: grid; gap: var(--space-1);"><span style="font-size: 17px; letter-spacing: 0.14em;">炊合　海老芋と鴨ロース</span><span class="text-muted" style="font-size: 13px;">白味噌、粉山椒</span></div></td>
-              <td data-sm-hide style="text-align: right; vertical-align: top; padding-block: var(--space-4); font-family: var(--font-heading); font-style: italic; font-size: 13px; color: var(--color-neutral-600);">Takiawase</td>
-            </tr>
-            <tr>
-              <td class="num" style="vertical-align: top; padding-block: var(--space-4); color: var(--color-neutral-600); letter-spacing: 0.2em;">六</td>
-              <td style="padding-block: var(--space-4);"><div style="display: grid; gap: var(--space-1);"><span style="font-size: 17px; letter-spacing: 0.14em;">強肴　鮑の柔らか蒸し</span><span class="text-muted" style="font-size: 13px;">肝のソース、酢橘</span></div></td>
-              <td data-sm-hide style="text-align: right; vertical-align: top; padding-block: var(--space-4); font-family: var(--font-heading); font-style: italic; font-size: 13px; color: var(--color-neutral-600);">Shiizakana</td>
-            </tr>
-            <tr>
-              <td class="num" style="vertical-align: top; padding-block: var(--space-4); color: var(--color-neutral-600); letter-spacing: 0.2em;">七</td>
-              <td style="padding-block: var(--space-4);"><div style="display: grid; gap: var(--space-1);"><span style="font-size: 17px; letter-spacing: 0.14em;">御飯　丹波の新米、香の物</span><span class="text-muted" style="font-size: 13px;">土鍋炊き、椀替りの赤出汁</span></div></td>
-              <td data-sm-hide style="text-align: right; vertical-align: top; padding-block: var(--space-4); font-family: var(--font-heading); font-style: italic; font-size: 13px; color: var(--color-neutral-600);">Gohan</td>
-            </tr>
-            <tr>
-              <td class="num" style="vertical-align: top; padding-block: var(--space-4); color: var(--color-neutral-600); letter-spacing: 0.2em; border-bottom: 0;">八</td>
-              <td style="padding-block: var(--space-4); border-bottom: 0;"><div style="display: grid; gap: var(--space-1);"><span style="font-size: 17px; letter-spacing: 0.14em;">水菓子　白桃と甘露</span><span class="text-muted" style="font-size: 13px;">薄茶とともに</span></div></td>
-              <td data-sm-hide style="text-align: right; vertical-align: top; padding-block: var(--space-4); border-bottom: 0; font-family: var(--font-heading); font-style: italic; font-size: 13px; color: var(--color-neutral-600);">Mizugashi</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: var(--space-4);">
-          <div class="card">
-            <span class="card-kicker">おまかせ　夜</span>
-            <span class="num" style="font-family: var(--font-heading); font-size: 28px; letter-spacing: 0.02em;">¥ 28,000</span>
-            <p class="card-body">全十二品。税・サービス料（10%）別。</p>
+      <section data-route="reserve"
+        style="padding: clamp(var(--space-8), 8vh, 96px) clamp(var(--space-4), 5vw, 64px) clamp(var(--space-8), 10vh, 120px);">
+        <div style="max-width: 1180px; margin: 0 auto; display: grid; gap: clamp(var(--space-6), 5vw, 72px);">
+          <div style="display: grid; gap: var(--space-4); max-width: 60ch;">
+            <h6 class="kicker">ご予約・アクセス</h6>
+            <h1 class="pgtitle">お席のご予約</h1>
+            <hr class="hr" style="margin: 0; background: var(--color-accent); opacity: 0.5;">
           </div>
-          <div class="card">
-            <span class="card-kicker">酒肴の組み合せ</span>
-            <span class="num" style="font-family: var(--font-heading); font-size: 28px; letter-spacing: 0.02em;">¥ 9,000</span>
-            <p class="card-body">日本酒五種。料理に合わせて主人がお出しします。</p>
-          </div>
-          <div class="card">
-            <span class="card-kicker">ワインの組み合せ</span>
-            <span class="num" style="font-family: var(--font-heading); font-size: 28px; letter-spacing: 0.02em;">¥ 12,000</span>
-            <p class="card-body">四種。ブルゴーニュとジュラを中心に。</p>
-          </div>
-        </div>
+          <div data-cols="2"
+            style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: clamp(var(--space-6), 6vw, 96px); align-items: start;">
+            <div style="display: grid; gap: var(--space-4);">
+              <p class="lead">二か月前の一日、午前十時より翌々月分を承ります。フォームは仮のお申し込みで、折り返しお電話にて確定いたします。当日のお取り消しは全額を頂戴します。</p>
+              <a href="tel:0355550110" class="num"
+                style="font-family: var(--font-heading); font-size: clamp(28px, 3.4vw, 42px); letter-spacing: 0.04em; color: var(--color-text);">03
+                · 5555 · 0110</a>
+              <hr class="hr">
+              <div
+                style="display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: var(--space-3) var(--space-6); font-size: 14px; line-height: 1.95;">
+                <span class="text-muted" style="font-size: 12.5px; letter-spacing: 0.14em;">所在地</span><span>東京都江戸川区西小松川町
+                  三-十二-八</span>
+                <span class="text-muted" style="font-size: 12.5px; letter-spacing: 0.14em;">最寄</span><span>都営新宿線
+                  船堀駅より徒歩十二分／旧中川の土手より六分</span>
+                <span class="text-muted" style="font-size: 12.5px; letter-spacing: 0.14em;">営業</span><span>一部 17:30／二部
+                  20:30　いずれも一斉スタート</span>
+                <span class="text-muted"
+                  style="font-size: 12.5px; letter-spacing: 0.14em;">定休</span><span>水曜・第三木曜、八月中旬、年末年始</span>
+                <span class="text-muted" style="font-size: 12.5px; letter-spacing: 0.14em;">受付</span><span>15:00 –
+                  21:00（定休日を除く）／ reserve@seisui.tokyo</span>
+                <span class="text-muted"
+                  style="font-size: 12.5px; letter-spacing: 0.14em;">お願い</span><span>香りの強い装いはお控えください。十二歳以下のお子様のご入店はご遠慮いただいております。</span>
+              </div>
+            </div>
 
-        <div class="next">
-          <a href="#/concept" class="text-muted">&lt;—　献立の思想</a>
-          <a href="#/drink">酒とワイン　—&gt;</a>
-        </div>
-      </div>
-    </section>
-
-    <section data-route="drink" style="padding: clamp(var(--space-8), 8vh, 96px) clamp(var(--space-4), 5vw, 64px) clamp(var(--space-8), 10vh, 120px);">
-      <div style="max-width: 1180px; margin: 0 auto; display: grid; gap: clamp(var(--space-6), 5vw, 72px);">
-        <div style="display: grid; gap: var(--space-4); max-width: 60ch;">
-          <h6 class="kicker">酒とワイン</h6>
-          <h1 class="pgtitle">酒は、料理の次に<br>決めます。</h1>
-          <hr class="hr" style="margin: 0; background: var(--color-accent); opacity: 0.5;">
-        </div>
-        <div data-cols="2" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: clamp(var(--space-6), 6vw, 96px); align-items: start;">
-          <div style="display: grid; gap: var(--space-4);">
-            <p class="lead">常備は十五種ほど。冷蔵庫の容量にあわせ、開けたものはその晩で使い切ります。銘柄のご指定より、皿に合わせてお任せいただくほうが良い夜になります。</p>
-            <figure style="display: grid; gap: var(--space-2); margin: var(--space-2) 0 0;">
-              <div class="plate" style="border-radius: var(--radius-md);">
-                <img src="images/sake.jpg" alt="酒器と徳利" style="width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block;">
-              </div>
-              <figcaption style="letter-spacing: 0.1em;">酒器は李朝と唐津を織り交ぜて。</figcaption>
-            </figure>
-          </div>
-          <div style="display: grid; gap: var(--space-8);">
-            <div style="display: grid; gap: var(--space-3);">
-              <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid var(--color-accent); padding-bottom: var(--space-2);">
-                <span style="font-size: 15px; letter-spacing: 0.2em;">日本酒</span>
-                <span class="num text-muted" style="font-size: 11px; letter-spacing: 0.18em;">GLASS 90ml</span>
-              </div>
-              <div style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-2) var(--space-6); font-size: 14px; line-height: 2;">
-                <span>惣兵衛　純米大吟醸　生原酒<span class="text-muted" style="font-size: 12px;">　新潟・佐渡</span></span><span class="num">¥ 2,400</span>
-                <span>白鷺の城　山廃純米<span class="text-muted" style="font-size: 12px;">　兵庫・姫路</span></span><span class="num">¥ 1,600</span>
-                <span>睡蓮　特別純米　無濾過<span class="text-muted" style="font-size: 12px;">　秋田・湯沢</span></span><span class="num">¥ 1,400</span>
-                <span>寒北　貴醸酒<span class="text-muted" style="font-size: 12px;">　佐賀・鹿島</span></span><span class="num">¥ 1,900</span>
-              </div>
-            </div>
-            <div style="display: grid; gap: var(--space-3);">
-              <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid var(--color-accent); padding-bottom: var(--space-2);">
-                <span style="font-size: 15px; letter-spacing: 0.2em;">ワイン</span>
-                <span class="num text-muted" style="font-size: 11px; letter-spacing: 0.18em;">GLASS 100ml</span>
-              </div>
-              <div style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-2) var(--space-6); font-size: 14px; line-height: 2;">
-                <span>Chablis 1er Cru, Montmains 2021<span class="text-muted" style="font-size: 12px;">　Bourgogne</span></span><span class="num">¥ 2,800</span>
-                <span>Savagnin Ouillé 2020<span class="text-muted" style="font-size: 12px;">　Jura</span></span><span class="num">¥ 2,600</span>
-                <span>Bourgogne Rouge, Vieilles Vignes 2019<span class="text-muted" style="font-size: 12px;">　Bourgogne</span></span><span class="num">¥ 3,100</span>
-                <span>Champagne Extra Brut, Blanc de Noirs NV<span class="text-muted" style="font-size: 12px;">　Montagne de Reims</span></span><span class="num">¥ 3,400</span>
-              </div>
-            </div>
-            <div style="display: grid; gap: var(--space-3);">
-              <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid var(--color-divider); padding-bottom: var(--space-2);">
-                <span style="font-size: 15px; letter-spacing: 0.2em;">お茶・その他</span>
-              </div>
-              <div style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-2) var(--space-6); font-size: 14px; line-height: 2;">
-                <span>宇治　薄茶（水菓子とともに）</span><span class="num text-muted">コースに含む</span>
-                <span>朝比奈　玉露　冷やし</span><span class="num">¥ 1,200</span>
-                <span>ノンアルコールの組み合せ（四種）</span><span class="num">¥ 5,000</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="next">
-          <a href="#/course" class="text-muted">&lt;—　お品書き</a>
-          <a href="#/chef">料理長　—&gt;</a>
-        </div>
-      </div>
-    </section>
-
-    <section data-route="chef" style="padding: clamp(var(--space-8), 8vh, 96px) clamp(var(--space-4), 5vw, 64px) clamp(var(--space-8), 10vh, 120px);">
-      <div style="max-width: 1180px; margin: 0 auto; display: grid; gap: clamp(var(--space-6), 5vw, 72px);">
-        <div style="display: grid; gap: var(--space-4); max-width: 60ch;">
-          <h6 class="kicker">料理長</h6>
-          <h1 class="pgtitle">高瀬 惣一郎</h1>
-          <hr class="hr" style="margin: 0; background: var(--color-accent); opacity: 0.5;">
-        </div>
-        <div data-cols="2" style="display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); gap: clamp(var(--space-6), 6vw, 88px); align-items: start;">
-          <figure style="display: grid; gap: var(--space-2); margin: 0;">
-            <div class="plate" style="border-radius: var(--radius-md);">
-              <img src="images/chef.jpg" alt="板場に立つ料理長" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block;">
-            </div>
-            <figcaption style="letter-spacing: 0.1em;">料理長　高瀬 惣一郎</figcaption>
-          </figure>
-          <div style="display: grid; gap: var(--space-4);">
-            <p class="lead">十六で祇園の料亭に入り、十二年を煮方で過ごす。三十歳で渡欧し、リヨンとコペンハーゲンの厨房を経て帰国。二〇一一年、神楽坂の五席で静水を始め、二〇一九年に江戸川のこの家へ移る。</p>
-            <blockquote style="margin: 0; padding-left: var(--space-6); border-left: 1px solid var(--color-accent); font-size: 16px; line-height: 2.1; letter-spacing: 0.04em; font-family: var(--font-heading);">出汁は引くものではなく、待つもの。火を弱めて三十分、鰹が自分から出てくるのを待ちます。急いだ出汁は、椀を空ける前に飽きが来ます。</blockquote>
-            <hr class="hr">
-            <div style="display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: var(--space-3) var(--space-6); font-size: 13.5px; line-height: 1.9;">
-              <span class="num text-muted">一九七二</span><span>東京・江東区に生まれる</span>
-              <span class="num text-muted">一九八八</span><span>京都・祇園「梅乃井」に入る</span>
-              <span class="num text-muted">二〇〇二</span><span>仏リヨン「Le Puits」煮方</span>
-              <span class="num text-muted">二〇一一</span><span>神楽坂に静水 開店</span>
-              <span class="num text-muted">二〇一九</span><span>江戸川区西小松川へ移転、現在の八席に</span>
-            </div>
-          </div>
-        </div>
-        <div class="next">
-          <a href="#/drink" class="text-muted">&lt;—　酒とワイン</a>
-          <a href="#/space">店内・空間　—&gt;</a>
-        </div>
-      </div>
-    </section>
-
-    <section data-route="space" style="padding: clamp(var(--space-8), 8vh, 96px) clamp(var(--space-4), 5vw, 64px) clamp(var(--space-8), 10vh, 120px);">
-      <div style="max-width: 1180px; margin: 0 auto; display: grid; gap: clamp(var(--space-6), 5vw, 64px);">
-        <div style="display: grid; gap: var(--space-4); max-width: 60ch;">
-          <h6 class="kicker">店内・空間</h6>
-          <h1 class="pgtitle">一軒家に、八席</h1>
-          <hr class="hr" style="margin: 0; background: var(--color-accent); opacity: 0.5;">
-          <p class="lead">築六十年の木造二階建てを、柱と梁を残して改めました。カウンターは吉野杉の一枚板。灯りは手元だけに落とし、庭の音が入るよう窓を一枚残しています。</p>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: clamp(var(--space-4), 3vw, var(--space-8));">
-          <figure style="display: grid; gap: var(--space-2); margin: 0;">
-            <div class="plate" style="border-radius: var(--radius-md);">
-              <img src="images/counter.jpg" alt="吉野杉の一枚板カウンター" style="width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block;">
-            </div>
-            <figcaption style="letter-spacing: 0.1em;">八席のカウンター（一枚板・四寸）</figcaption>
-          </figure>
-          <figure style="display: grid; gap: var(--space-2); margin: 0; align-self: end;">
-            <div class="plate" style="border-radius: var(--radius-md);">
-              <img src="images/roji.jpg" alt="露地と坪庭の灯り" style="width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block;">
-            </div>
-            <figcaption style="letter-spacing: 0.1em;">門から玄関までの露地</figcaption>
-          </figure>
-          <figure style="display: grid; gap: var(--space-2); margin: 0;">
-            <div class="plate" style="border-radius: var(--radius-md);">
-              <img src="images/zashiki.jpg" alt="二階の四畳半座敷" style="width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block;">
-            </div>
-            <figcaption style="letter-spacing: 0.1em;">二階座敷（四名まで・要相談）</figcaption>
-          </figure>
-        </div>
-        <div class="next">
-          <a href="#/chef" class="text-muted">&lt;—　料理長</a>
-          <a href="#/news">季節の便り　—&gt;</a>
-        </div>
-      </div>
-    </section>
-
-    <section data-route="news" style="padding: clamp(var(--space-8), 8vh, 96px) clamp(var(--space-4), 5vw, 64px) clamp(var(--space-8), 10vh, 120px);">
-      <div style="max-width: 1000px; margin: 0 auto; display: grid; gap: clamp(var(--space-6), 5vw, 64px);">
-        <div style="display: grid; gap: var(--space-4); max-width: 60ch;">
-          <h6 class="kicker">季節の便り</h6>
-          <h1 class="pgtitle">お知らせ</h1>
-          <hr class="hr" style="margin: 0; background: var(--color-accent); opacity: 0.5;">
-        </div>
-        <div style="display: grid; gap: var(--space-6);">
-          <article data-news-row style="display: grid; grid-template-columns: 118px minmax(0, 1fr); gap: var(--space-6); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-divider);">
-            <span class="num text-muted" style="font-size: 12px; letter-spacing: 0.16em;">2026.08.01</span>
-            <div style="display: grid; gap: var(--space-2);">
-              <h4 style="margin: 0; font-weight: 400; font-size: 19px; letter-spacing: 0.08em;">十月分のご予約を承ります</h4>
-              <p class="text-muted" style="margin: 0; font-size: 14px; line-height: 2;">八月一日午前十時より、電話にて受付を開始します。二部（20:30）は比較的お取りやすくなっております。</p>
-            </div>
-          </article>
-          <article data-news-row style="display: grid; grid-template-columns: 118px minmax(0, 1fr); gap: var(--space-6); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-divider);">
-            <span class="num text-muted" style="font-size: 12px; letter-spacing: 0.16em;">2026.07.18</span>
-            <div style="display: grid; gap: var(--space-2);">
-              <h4 style="margin: 0; font-weight: 400; font-size: 19px; letter-spacing: 0.08em;">鮎が終わり、松茸を待つ間</h4>
-              <p class="text-muted" style="margin: 0; font-size: 14px; line-height: 2;">今年の鮎は九月中旬まで。焼物は落ち鮎の子持ちに替わり、以降は甘鯛の松笠焼きへ移ります。</p>
-            </div>
-          </article>
-          <article data-news-row style="display: grid; grid-template-columns: 118px minmax(0, 1fr); gap: var(--space-6);">
-            <span class="num text-muted" style="font-size: 12px; letter-spacing: 0.16em;">2026.06.30</span>
-            <div style="display: grid; gap: var(--space-2);">
-              <h4 style="margin: 0; font-weight: 400; font-size: 19px; letter-spacing: 0.08em;">夏季休業のお知らせ</h4>
-              <p class="text-muted" style="margin: 0; font-size: 14px; line-height: 2;">八月十三日から十八日まで、庭木の手入れと器の入れ替えのため休ませていただきます。</p>
-            </div>
-          </article>
-        </div>
-        <div class="next">
-          <a href="#/space" class="text-muted">&lt;—　店内・空間</a>
-          <a href="#/reserve">ご予約　—&gt;</a>
-        </div>
-      </div>
-    </section>
-
-    <section data-route="reserve" style="padding: clamp(var(--space-8), 8vh, 96px) clamp(var(--space-4), 5vw, 64px) clamp(var(--space-8), 10vh, 120px);">
-      <div style="max-width: 1180px; margin: 0 auto; display: grid; gap: clamp(var(--space-6), 5vw, 72px);">
-        <div style="display: grid; gap: var(--space-4); max-width: 60ch;">
-          <h6 class="kicker">ご予約・アクセス</h6>
-          <h1 class="pgtitle">お席のご予約</h1>
-          <hr class="hr" style="margin: 0; background: var(--color-accent); opacity: 0.5;">
-        </div>
-        <div data-cols="2" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: clamp(var(--space-6), 6vw, 96px); align-items: start;">
-          <div style="display: grid; gap: var(--space-4);">
-            <p class="lead">二か月前の一日、午前十時より翌々月分を承ります。フォームは仮のお申し込みで、折り返しお電話にて確定いたします。当日のお取り消しは全額を頂戴します。</p>
-            <a href="tel:0355550110" class="num" style="font-family: var(--font-heading); font-size: clamp(28px, 3.4vw, 42px); letter-spacing: 0.04em; color: var(--color-text);">03 · 5555 · 0110</a>
-            <hr class="hr">
-            <div style="display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: var(--space-3) var(--space-6); font-size: 14px; line-height: 1.95;">
-              <span class="text-muted" style="font-size: 12.5px; letter-spacing: 0.14em;">所在地</span><span>東京都江戸川区西小松川町 三-十二-八</span>
-              <span class="text-muted" style="font-size: 12.5px; letter-spacing: 0.14em;">最寄</span><span>都営新宿線 船堀駅より徒歩十二分／旧中川の土手より六分</span>
-              <span class="text-muted" style="font-size: 12.5px; letter-spacing: 0.14em;">営業</span><span>一部 17:30／二部 20:30　いずれも一斉スタート</span>
-              <span class="text-muted" style="font-size: 12.5px; letter-spacing: 0.14em;">定休</span><span>水曜・第三木曜、八月中旬、年末年始</span>
-              <span class="text-muted" style="font-size: 12.5px; letter-spacing: 0.14em;">受付</span><span>15:00 – 21:00（定休日を除く）／ reserve@seisui.tokyo</span>
-              <span class="text-muted" style="font-size: 12.5px; letter-spacing: 0.14em;">お願い</span><span>香りの強い装いはお控えください。十二歳以下のお子様のご入店はご遠慮いただいております。</span>
-            </div>
-          </div>
-
-          <div class="card elev-sm" style="background: var(--color-bg); padding: clamp(var(--space-6), 4vw, 44px); gap: var(--space-6);">
-            <div id="reserve-done" style="display: none; padding-block: var(--space-8); text-align: center; justify-items: center; grid-gap: var(--space-4);">
-              <div style="display: grid; gap: var(--space-4); justify-items: center;">
-                <span style="font-family: var(--font-heading); font-size: 34px; color: var(--color-accent);">承りました</span>
-                <p style="margin: 0; font-size: 14px; line-height: 2.1; max-width: 34ch;">仮のお申し込みを受け付けました。二営業日以内に、主人よりお電話にてご連絡いたします。</p>
-                <button type="button" id="reserve-reset" class="btn btn-secondary" style="letter-spacing: 0.18em;">別の日でもう一度</button>
-              </div>
-            </div>
-            <form id="reserve-form" style="display: grid; gap: var(--space-4);">
-              <div style="display: grid; gap: var(--space-2); padding-bottom: var(--space-3); border-bottom: 1px solid var(--color-divider);">
-                <h3 style="margin: 0; font-weight: 400; font-size: 21px; letter-spacing: 0.14em;">仮予約のお申し込み</h3>
-                <span class="text-muted" style="font-size: 12px;">＊は必須項目です</span>
-              </div>
-              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--space-4);">
-                <div class="field"><label for="rname">お名前＊</label><input class="input" id="rname" type="text" placeholder="高瀬 惣一郎" required></div>
-                <div class="field"><label for="rtel">お電話番号＊</label><input class="input num" id="rtel" type="tel" placeholder="090-0000-0000" required></div>
-              </div>
-              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--space-4);">
-                <div class="field"><label for="rdate">ご希望日＊</label><input class="input num" id="rdate" type="date" required></div>
-                <div class="field"><label for="rmail">メールアドレス</label><input class="input" id="rmail" type="email" placeholder="name@example.com"></div>
-              </div>
-              <div class="field" style="display: grid; gap: var(--space-2);">
-                <label>お時間</label>
-                <div class="seg">
-                  <label class="seg-opt"><input type="radio" name="bu" checked><span class="num">一部　17:30</span></label>
-                  <label class="seg-opt"><input type="radio" name="bu"><span class="num">二部　20:30</span></label>
+            <div class="card elev-sm"
+              style="background: var(--color-bg); padding: clamp(var(--space-6), 4vw, 44px); gap: var(--space-6);">
+              <div id="reserve-done"
+                style="display: none; padding-block: var(--space-8); text-align: center; justify-items: center; grid-gap: var(--space-4);">
+                <div style="display: grid; gap: var(--space-4); justify-items: center;">
+                  <span
+                    style="font-family: var(--font-heading); font-size: 34px; color: var(--color-accent);">承りました</span>
+                  <p style="margin: 0; font-size: 14px; line-height: 2.1; max-width: 34ch;">
+                    仮のお申し込みを受け付けました。二営業日以内に、主人よりお電話にてご連絡いたします。</p>
+                  <button type="button" id="reserve-reset" class="btn btn-secondary"
+                    style="letter-spacing: 0.18em;">別の日でもう一度</button>
                 </div>
               </div>
-              <div class="field" style="display: grid; gap: var(--space-2);">
-                <label>人数</label>
-                <div style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
-                  <label class="radio"><input type="radio" name="pax" checked><span class="dot"></span><span class="num">1名</span></label>
-                  <label class="radio"><input type="radio" name="pax"><span class="dot"></span><span class="num">2名</span></label>
-                  <label class="radio"><input type="radio" name="pax"><span class="dot"></span><span class="num">3名</span></label>
-                  <label class="radio"><input type="radio" name="pax"><span class="dot"></span><span class="num">4名</span></label>
-                  <label class="radio"><input type="radio" name="pax"><span class="dot"></span><span>5名以上</span></label>
+              <form id="reserve-form" style="display: grid; gap: var(--space-4);">
+                <div
+                  style="display: grid; gap: var(--space-2); padding-bottom: var(--space-3); border-bottom: 1px solid var(--color-divider);">
+                  <h3 style="margin: 0; font-weight: 400; font-size: 21px; letter-spacing: 0.14em;">仮予約のお申し込み</h3>
+                  <span class="text-muted" style="font-size: 12px;">＊は必須項目です</span>
                 </div>
-              </div>
-              <div class="field"><label for="rnote">お苦手な食材・ご要望</label><textarea class="input" id="rnote" placeholder="甲殻類が苦手です／記念日で伺います など"></textarea></div>
-              <button type="submit" class="btn btn-primary btn-block" style="letter-spacing: 0.2em; padding-block: var(--space-3);">この内容で申し込む</button>
-              <p class="text-muted" style="margin: 0; font-size: 11.5px; line-height: 1.9; text-align: center;">送信のみでは予約は確定しません。折り返しのお電話をもって成立いたします。</p>
-            </form>
+                <div
+                  style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--space-4);">
+                  <div class="field"><label for="rname">お名前＊</label><input class="input" id="rname" type="text"
+                      placeholder="高瀬 惣一郎" required></div>
+                  <div class="field"><label for="rtel">お電話番号＊</label><input class="input num" id="rtel" type="tel"
+                      placeholder="090-0000-0000" required></div>
+                </div>
+                <div
+                  style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--space-4);">
+                  <div class="field"><label for="rdate">ご希望日＊</label><input class="input num" id="rdate" type="date"
+                      required></div>
+                  <div class="field"><label for="rmail">メールアドレス</label><input class="input" id="rmail" type="email"
+                      placeholder="name@example.com"></div>
+                </div>
+                <div class="field" style="display: grid; gap: var(--space-2);">
+                  <label>お時間</label>
+                  <div class="seg">
+                    <label class="seg-opt"><input type="radio" name="bu" checked><span
+                        class="num">一部　17:30</span></label>
+                    <label class="seg-opt"><input type="radio" name="bu"><span class="num">二部　20:30</span></label>
+                  </div>
+                </div>
+                <div class="field" style="display: grid; gap: var(--space-2);">
+                  <label>人数</label>
+                  <div style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
+                    <label class="radio"><input type="radio" name="pax" checked><span class="dot"></span><span
+                        class="num">1名</span></label>
+                    <label class="radio"><input type="radio" name="pax"><span class="dot"></span><span
+                        class="num">2名</span></label>
+                    <label class="radio"><input type="radio" name="pax"><span class="dot"></span><span
+                        class="num">3名</span></label>
+                    <label class="radio"><input type="radio" name="pax"><span class="dot"></span><span
+                        class="num">4名</span></label>
+                    <label class="radio"><input type="radio" name="pax"><span
+                        class="dot"></span><span>5名以上</span></label>
+                  </div>
+                </div>
+                <div class="field"><label for="rnote">お苦手な食材・ご要望</label><textarea class="input" id="rnote"
+                    placeholder="甲殻類が苦手です／記念日で伺います など"></textarea></div>
+                <button type="submit" class="btn btn-primary btn-block"
+                  style="letter-spacing: 0.2em; padding-block: var(--space-3);">この内容で申し込む</button>
+                <p class="text-muted" style="margin: 0; font-size: 11.5px; line-height: 1.9; text-align: center;">
+                  送信のみでは予約は確定しません。折り返しのお電話をもって成立いたします。</p>
+              </form>
+            </div>
+          </div>
+          <div class="next">
+            <a href="#/news" class="text-muted">&lt;—　季節の便り</a>
+            <a href="#/home">ホーム　—&gt;</a>
           </div>
         </div>
-        <div class="next">
-          <a href="#/news" class="text-muted">&lt;—　季節の便り</a>
-          <a href="#/home">ホーム　—&gt;</a>
+      </section>
+
+    </main>
+
+    <footer class="site-footer"
+      style="padding: clamp(var(--space-8), 8vh, 88px) clamp(var(--space-4), 5vw, 64px) clamp(var(--space-6), 6vh, 60px);">
+      <div style="max-width: 1180px; margin: 0 auto; display: grid; gap: var(--space-6);">
+        <div
+          style="display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-6); flex-wrap: wrap;">
+          <div style="display: grid; gap: var(--space-2);">
+            <span
+              style="font-family: var(--font-heading); font-size: 22px; letter-spacing: 0.3em; color: var(--color-accent-400);">静水</span>
+            <span class="num text-muted"
+              style="font-size: 10.5px; letter-spacing: 0.36em; text-transform: uppercase;">Seisui · Nishikomatsugawa,
+              Edogawa</span>
+          </div>
+          <nav
+            style="display: flex; gap: var(--space-4) var(--space-6); flex-wrap: wrap; font-size: 13px; letter-spacing: 0.12em;">
+            <a href="#/home">ホーム</a>
+            <a href="#/concept">献立の思想</a>
+            <a href="#/course">お品書き</a>
+            <a href="#/drink">酒とワイン</a>
+            <a href="#/chef">料理長</a>
+            <a href="#/space">店内・空間</a>
+            <a href="#/news">季節の便り</a>
+            <a href="#/reserve">ご予約</a>
+          </nav>
         </div>
+        <hr class="hr" style="margin: 0;">
+        <span class="text-muted num" style="font-size: 11.5px; letter-spacing: 0.16em;">© 2026 静水　—　架空の店舗です</span>
       </div>
-    </section>
+    </footer>
+  </div>
 
-  </main>
-
-  <footer class="site-footer" style="padding: clamp(var(--space-8), 8vh, 88px) clamp(var(--space-4), 5vw, 64px) clamp(var(--space-6), 6vh, 60px);">
-    <div style="max-width: 1180px; margin: 0 auto; display: grid; gap: var(--space-6);">
-      <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-6); flex-wrap: wrap;">
-        <div style="display: grid; gap: var(--space-2);">
-          <span style="font-family: var(--font-heading); font-size: 22px; letter-spacing: 0.3em; color: var(--color-accent-400);">静水</span>
-          <span class="num text-muted" style="font-size: 10.5px; letter-spacing: 0.36em; text-transform: uppercase;">Seisui · Nishikomatsugawa, Edogawa</span>
-        </div>
-        <nav style="display: flex; gap: var(--space-4) var(--space-6); flex-wrap: wrap; font-size: 13px; letter-spacing: 0.12em;">
-          <a href="#/home">ホーム</a>
-          <a href="#/concept">献立の思想</a>
-          <a href="#/course">お品書き</a>
-          <a href="#/drink">酒とワイン</a>
-          <a href="#/chef">料理長</a>
-          <a href="#/space">店内・空間</a>
-          <a href="#/news">季節の便り</a>
-          <a href="#/reserve">ご予約</a>
-        </nav>
-      </div>
-      <hr class="hr" style="margin: 0;">
-      <span class="text-muted num" style="font-size: 11.5px; letter-spacing: 0.16em;">© 2026 静水　—　架空の店舗です</span>
-    </div>
-  </footer>
-</div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
